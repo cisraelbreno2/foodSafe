@@ -23,7 +23,7 @@ public class EmployeeController {
         this.encoder = encoder;
     }
 
-    @GetMapping("/")
+    @GetMapping()
     public ResponseEntity<List<EmployeeModel>> findAll() {
         return ResponseEntity.ok(repository.findAll());
     }
@@ -48,5 +48,11 @@ public class EmployeeController {
 
         HttpStatus status = (valid) ? HttpStatus.OK : HttpStatus.UNAUTHORIZED;
         return ResponseEntity.status(status).body(valid);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Object> findById(@PathVariable(value = "id") Long id){
+        Optional<EmployeeModel> employe = repository.findById(id);
+        return ResponseEntity.status(HttpStatus.OK).body(employe);
     }
 }
