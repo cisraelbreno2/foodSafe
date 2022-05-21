@@ -1,10 +1,8 @@
-package com.br.safefood.service;
+package com.br.safefood.service.administration;
 
-import com.br.safefood.model.EmployeeModel;
-import com.br.safefood.repository.EmployeeRepository;
+import com.br.safefood.model.administration.EmployeeModel;
+import com.br.safefood.repository.administration.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

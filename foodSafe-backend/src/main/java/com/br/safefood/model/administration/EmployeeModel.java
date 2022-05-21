@@ -1,4 +1,4 @@
-package com.br.safefood.model;
+package com.br.safefood.model.administration;
 
 import lombok.Data;
 

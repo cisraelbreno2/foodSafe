@@ -1,7 +1,7 @@
 package com.br.safefood.security;
 
-import com.br.safefood.model.EmployeeModel;
-import com.br.safefood.repository.EmployeeRepository;
+import com.br.safefood.model.administration.EmployeeModel;
+import com.br.safefood.repository.administration.EmployeeRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

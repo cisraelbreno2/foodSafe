@@ -1,8 +1,7 @@
-package com.br.safefood.repository;
+package com.br.safefood.repository.administration;
 
-import com.br.safefood.model.EmployeeModel;
+import com.br.safefood.model.administration.EmployeeModel;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;

@@ -1,6 +1,6 @@
 package com.br.safefood.security;
 
-import com.br.safefood.model.EmployeeModel;
+import com.br.safefood.model.administration.EmployeeModel;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

@@ -1,8 +1,8 @@
 package com.br.safefood.controller;
 
 
-import com.br.safefood.model.EmployeeModel;
-import com.br.safefood.repository.EmployeeRepository;
+import com.br.safefood.model.administration.EmployeeModel;
+import com.br.safefood.repository.administration.EmployeeRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
