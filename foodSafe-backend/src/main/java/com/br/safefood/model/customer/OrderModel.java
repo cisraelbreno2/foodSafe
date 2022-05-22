@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.persistence.Table;
+import java.util.Date;
 
 @Data
 @Entity
@@ -27,5 +28,13 @@ public class OrderModel {
     @ManyToOne
     @JoinColumn(name = "state_order_id")
     private StateOrderModel stateOrder;
+
+
+    @ManyToOne
+    @JoinColumn(name = "client_card_id")
+    private ClientCardModel clientCard;
+
+    @Column
+    private Date date;
 
 }

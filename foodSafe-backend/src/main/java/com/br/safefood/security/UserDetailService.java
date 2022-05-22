@@ -1,7 +1,7 @@
 package com.br.safefood.security;
 
+import com.br.safefood.repository.administration.IEmployeeRepository;
 import com.br.safefood.model.administration.EmployeeModel;
-import com.br.safefood.repository.administration.EmployeeRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -12,9 +12,9 @@ import java.util.Optional;
 @Component
 public class UserDetailService implements UserDetailsService {
 
-    private final EmployeeRepository repository;
+    private final IEmployeeRepository repository;
 
-    public UserDetailService(EmployeeRepository repository) {
+    public UserDetailService(IEmployeeRepository repository) {
         this.repository = repository;
     }
 

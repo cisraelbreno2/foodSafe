@@ -1,7 +1,7 @@
 package com.br.safefood.service.administration;
 
 import com.br.safefood.model.administration.EmployeeModel;
-import com.br.safefood.repository.administration.EmployeeRepository;
+import com.br.safefood.repository.administration.IEmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.Optional;
 public class EmployeeService {
 
     @Autowired
-    EmployeeRepository employeeRepository;
+    IEmployeeRepository employeeRepository;
 
     @Transactional
     public EmployeeModel save(EmployeeModel employeeModel) {

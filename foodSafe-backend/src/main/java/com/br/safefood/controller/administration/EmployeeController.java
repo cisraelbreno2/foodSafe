@@ -1,8 +1,8 @@
-package com.br.safefood.controller;
+package com.br.safefood.controller.administration;
 
 
+import com.br.safefood.repository.administration.IEmployeeRepository;
 import com.br.safefood.model.administration.EmployeeModel;
-import com.br.safefood.repository.administration.EmployeeRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -15,10 +15,10 @@ import java.util.Optional;
 @RequestMapping("/employee")
 public class EmployeeController {
 
-    private final EmployeeRepository repository;
+    private final IEmployeeRepository repository;
     private final PasswordEncoder encoder;
 
-    public EmployeeController(EmployeeRepository repository, PasswordEncoder encoder) {
+    public EmployeeController(IEmployeeRepository repository, PasswordEncoder encoder) {
         this.repository = repository;
         this.encoder = encoder;
     }

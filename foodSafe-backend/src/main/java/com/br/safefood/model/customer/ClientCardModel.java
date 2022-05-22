@@ -28,7 +28,4 @@ public class ClientCardModel {
     @Column(name = "in_use")
     private Boolean inUse;
 
-    @ManyToMany
-    private List<OrderModel> orders;
-
 }
